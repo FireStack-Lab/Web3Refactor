@@ -10,28 +10,34 @@ Tooling for example `Truffle`, and wallet like `MetaMask`, they all start with `
 
 We started porting and migrating `Web3.js` for other pub-chain since mid-2018, and we find that even the developer tools for each pub-chain are different, however the basic parts are somehow similar.
 
-## Basic features
+We think it is important to understand these when developing multi-language-sdks
+
+## Basic
 
 - Account model
 - Crypto packages for keyGen
 - Crypto packages for AES/DES
-- Signing methods
+- BIP39 and BIP44 packages
+- Wallet instance for managing accounts
+- Signing method for messages and transactions/contracts
 
-## Network features
+## Network
 
 - HttpProvider/WebsocketProvider
 - RPCMethods
 - Middlewares
 - Protobuf/gRPC serializer
 
-## Transaction related
+## Transactions
 
+- Transaction factory method/class
 - Transaction counstructor
 - Transaction sender
 
-## Smart-Contract related
+## Smart-Contracts
 
 - ABI decoder/parser
+- Contract factory method/class
 - Contract consturctor
 - Contract state manager
 
