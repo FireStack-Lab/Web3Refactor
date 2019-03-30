@@ -21,38 +21,72 @@ We think it is important to understand these when developing multi-language-sdks
 - Wallet instance for managing accounts
 - Signing method for messages and transactions/contracts
 
-## Network
+## Network(`W` from Web3, `Z` from Zilliqa )
 
 - HttpProvider/WebsocketProvider
-- RPCMethods(Using `Web3.js` Standard)
+- RPCMethods
+
   - Transaction Related
-    - getTransaction
-    - getTransactionFromBlock
-    - getTransactionReceipt
-    - getTransactionCount
-    - sendTransaction
-    - sendSignedTransaction
+
+    - getTransaction(`W`/`Z`)
+    - getTransactionFromBlock(`W`)
+    - getTransactionReceipt(`W`)
+    - getTransactionCount(`W`)/GetNumTransactions(`Z`)
+    - sendTransaction(`W`)
+    - sendSignedTransaction(`W`)/CreateTransaction(`Z`)
+    - GetRecentTransactions(`Z`)
+    - GetTransactionsForTxBlock(`Z`)
+    - GetNumTxnsTxEpoch(`Z`)
+    - GetNumTxnsDSEpoch(`Z`)
+    - estimateGas(`W`)/GetMinimumGasPrice(`Z`)
+
   - Account Related
-    - getBalance
-    - getAccounts
+
+    - getBalance(`W`/`Z`)
+    - getAccounts(`W`)
+
   - BlockChain Related
-    - isSyncing
-    - getCoinbase
-    - isMining
-    - getHashrate
-    - getGasPrice
-    - getBlockNumber
-    - getStorageAt
-    - getBlock
-    - estimateGas
-    - getUncle
+
+    - isSyncing(`W`)
+    - getCoinbase(`W`)
+    - isMining(`W`)
+    - getHashrate(`W`)
+    - getBlockNumber(`W`)/GetNumTxBlocks(`Z`)
+    - getStorageAt(`W`)
+    - getBlock(`W`)
+    - getUncle(`W`)
+    - GetTxBlock(`Z`)
+    - GetLatestTxBlock(`Z`)
+    - GetTxBlockRate(`Z`)
+    - TxBlockListing(`Z`)
+    - GetBlockchainInfo(`Z`)
+
   - Contract Related
-    - getProtocolVersion
-    - getCode
-    - call
+
+    - call(`W`/`Z`)
+    - GetSmartContracts(`Z`)
+    - getCode(`W`)/GetSmartContractCode(`Z`)
+    - GetSmartContractInit(`Z`)
+    - GetSmartContractState(`Z`)
+
   - Miner Related
-    - getWork
-    - submitWork
+
+    - getWork(`W`)
+    - submitWork(`W`)
+
+  - Shards Related
+
+    - GetShardingStructure(`Z`)
+    - GetDSBlock(`Z`)
+    - GetLatestDSBlock(`Z`)
+    - GetNumDSBlocks(`Z`)
+    - GetDSBlockRate(`Z`)
+    - DSBlockListing(`Z`)
+    - GetCurrentMiniEpoch(`Z`)
+    - GetCurrentDSEpoch(`Z`)
+    - GetPrevDifficulty(`Z`)
+    - GetPrevDSDifficulty(`Z`)
+
 - Middlewares
 - Protobuf/gRPC serializer
 
