@@ -24,7 +24,35 @@ We think it is important to understand these when developing multi-language-sdks
 ## Network
 
 - HttpProvider/WebsocketProvider
-- RPCMethods
+- RPCMethods(Using `Web3.js` Standard)
+  - Transaction Related
+    - getTransaction
+    - getTransactionFromBlock
+    - getTransactionReceipt
+    - getTransactionCount
+    - sendTransaction
+    - sendSignedTransaction
+  - Account Related
+    - getBalance
+    - getAccounts
+  - BlockChain Related
+    - isSyncing
+    - getCoinbase
+    - isMining
+    - getHashrate
+    - getGasPrice
+    - getBlockNumber
+    - getStorageAt
+    - getBlock
+    - estimateGas
+    - getUncle
+  - Contract Related
+    - getProtocolVersion
+    - getCode
+    - call
+  - Miner Related
+    - getWork
+    - submitWork
 - Middlewares
 - Protobuf/gRPC serializer
 
@@ -38,7 +66,7 @@ We think it is important to understand these when developing multi-language-sdks
 
 - ABI decoder/parser
 - Contract factory method/class
-- Contract consturctor
+- Contract constructor
 - Contract state manager
 
 ## Common utils
