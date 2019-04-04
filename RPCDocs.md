@@ -99,7 +99,7 @@ for array-like result, we suggest following a collection pattern:
 {
     "id":"1",
     "jsonrpc":"2.0",
-    "result":"[
+    "result":[
         {
             "hash":"0x123",
             "timestamp":"00000000000"
@@ -112,7 +112,7 @@ for array-like result, we suggest following a collection pattern:
             "hash":"0x126",
             "timestamp":"00000000008"
         }
-    ]"
+    ]
 }
 ```
 
