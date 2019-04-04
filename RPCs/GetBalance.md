@@ -39,6 +39,6 @@ curl https://devnet.harmony.one \
 {
   "jsonrpc": "2.0",
   "id": 1,
-  "result": "{"balance":"0x2fe84e3113d7b",nonce:"0x2"}"
+  "result": {"balance":"0x2fe84e3113d7b","nonce":"0x2"}
 }
 ```
