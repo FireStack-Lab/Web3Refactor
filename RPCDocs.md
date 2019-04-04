@@ -148,9 +148,8 @@ For example, in javascript, the `SAFE_INTEGER` range is `-(253 - 1)` to `253 - 1
 
 To make things easy, we suggest as following.
 
-1. `Int/Uint` always returns with `Stringify` data, like `"10000"` or `"-100"`, don't do `10000` or `-100` directly
-2. `Boolean` returns boolean directly. like `true` or `false`, don't use `0/1`,`-1/1` as boolean tag.
-3. `Address`/`Hash`/`Signature`...,these are blockchain specific data, we use `0x` prefix string. like this
+1. `Boolean` returns boolean directly. like `true` or `false`, don't use `0/1`,`-1/1` as boolean tag.
+2. `Int/Uint/Address`/`Hash`/`Signature`...,these are blockchain specific data, we use `0x` prefix string. like this
 
     ```js
     {
@@ -159,7 +158,7 @@ To make things easy, we suggest as following.
         "signature":"0x6DEA9FE535AB3557963CA47323B150979CB7C3990515389AF18AFFDD1049ECF3C5AEB5107A64636A946E75219B9482AFE9C7E1D8E5C59D55A1A28A24C0B877B6"
     }
     ```
-4. `String` data should be return directly, like we handle the errors:
+3. `String` data should be return directly, like we handle the errors:
  
    ```js
     {

@@ -11,7 +11,7 @@ Returns the current "latest" block number.
 | `method`  | string | Required | `"GetLatestBlockNumber"` |
 | `params`  | string | Required | Empty string `""`        |
 
-#### curl example
+#### Curl example
 
 ```bash
 ## JSON-RPC over HTTPS POST
@@ -23,13 +23,13 @@ curl https://devnet.harmony.one \
 
 ```
 
-### Result
+### Response
 
-#### result fields
+#### Result fields
 
 - `BLOCK NUMBER` - a hex code of an integer representing the current block number the client is on.
 
-#### BODY
+#### Response Body
 
 ```js
 
