@@ -43,7 +43,7 @@ const balance = await harmony.blockchain.getBalance('0x0000000000000000000000000
 
 ### Suggestion on `Request.params`
 1. All params are inside the array, we use comma to separate multiple parameters. like this
-```json
+```js
     {
         "params":["1","2","3"]
     }
@@ -63,7 +63,7 @@ const encodeBeforeSend=JSON.Stringify(txnThumbObject).replace(/\\"/g, '"');
 
 and the request params would be:
 
-```json
+```js
     {
         "params":["{"toAddr":"0x00000","amount":"1000000"}"]
     }
@@ -85,7 +85,7 @@ All responses follows standard JSON-RPC format and included 3 variables int the 
 
 for single result, like a `string`, can be like this:
 
-```json
+```js
 {
     "id":"1",
     "jsonrpc":"2.0",
@@ -95,7 +95,7 @@ for single result, like a `string`, can be like this:
 
 for array-like result, we suggest following a collection pattern:
 
-```json
+```js
 {
     "id":"1",
     "jsonrpc":"2.0",
@@ -118,7 +118,7 @@ for array-like result, we suggest following a collection pattern:
 
 result can be JSON-Object, like this:
 
-```json
+```js
 {
   "id": "1",
   "jsonrpc": "2.0",
@@ -146,7 +146,7 @@ To make things easy, we suggest as following.
 2. `Boolean` returns boolean directly. like `true` or `false`, don't use `0/1`,`-1/1` as boolean tag.
 3. `Address`/`Hash`/`Signature`...,these are blockchain specific data, we use `0x` prefix string. like this
 
-    ```json
+    ```js
     {
         "address":"0x0000000000000000000000000000000000000001",
         "hash":"0x123",
@@ -155,7 +155,7 @@ To make things easy, we suggest as following.
     ```
 4. `String` data should be return directly, like we handle the errors:
  
-   ```json
+   ```js
     {
         "errorCode":"-100",
         "errorMessage":"Oops, something weird happens",
