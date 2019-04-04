@@ -69,7 +69,13 @@ and the request params would be:
     }
 ```
 
-3. 
+3. When client encounter data like BigNumber, we should always transform those to `string` before send, like this:
+```js
+   const amount=new BN(100000);
+
+   const amountToSend= amount.toString()
+   
+```
 
 ## Responses
 
