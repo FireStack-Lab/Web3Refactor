@@ -2,15 +2,16 @@
 
 Returns the current "latest" block number.
 
-### REQUEST
+### Request
 
-`POST https://devnet.harmony.one`
+| Parameter | Type   | Required | Description              |
+| --------- | ------ | -------- | ------------------------ |
+| `id`      | string | Required | `"1"`                    |
+| `jsonrpc` | string | Required | `"2.0"`                  |
+| `method`  | string | Required | `"GetLatestBlockNumber"` |
+| `params`  | string | Required | Empty string `""`        |
 
-#### HEADERS
-
-`Content-Type: application/json`
-
-#### EXAMPLE
+#### curl example
 
 ```bash
 ## JSON-RPC over HTTPS POST
@@ -22,9 +23,9 @@ curl https://devnet.harmony.one \
 
 ```
 
-### RESPONSE
+### Result
 
-#### RESULT FIELDS
+#### result fields
 
 - `BLOCK NUMBER` - a hex code of an integer representing the current block number the client is on.
 
