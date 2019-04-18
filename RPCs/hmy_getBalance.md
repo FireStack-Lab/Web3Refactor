@@ -4,12 +4,12 @@ Returns the balance of the account of given address.
 
 ### Request
 
-| Parameter | Type   | Required | Description                  |
-| --------- | ------ | -------- | ---------------------------- |
-| `id`      | string | Required | `"1"`                        |
-| `jsonrpc` | string | Required | `"2.0"`                      |
-| `method`  | string | Required | `"hmy_getBalance"`           |
-| `params`  | Array  | Required | `["ADDRESS","QUANTITY|TAG"]` |
+| Parameter | Type   | Required | Description                     |
+| --------- | ------ | -------- | ------------------------------- |
+| `id`      | string | Required | `"1"`                           |
+| `jsonrpc` | string | Required | `"2.0"`                         |
+| `method`  | string | Required | `"hmy_getBalance"`              |
+| `params`  | Array  | Required | `["ADDRESS","QUANTITY or TAG"]` |
 
 #### Request params
 
